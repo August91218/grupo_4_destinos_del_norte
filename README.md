@@ -12,7 +12,9 @@ Hemos utilizado los siguientes sitios webs de inspiración:
 * https://viajeros30.com
 * https://unaideaunviaje.com
 * https://miaventuraviajando.com
-wireframes de la pag
+
+
+-wireframes de la pag
 home
 https://drive.google.com/file/d/1pDsX9P9PC3Rw9A2wwLUbzV27t89iQBwb/view?usp=sharing
 tienda de paquetes de turismo
