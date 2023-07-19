@@ -12,3 +12,14 @@ Hemos utilizado los siguientes sitios webs de inspiración:
 * https://viajeros30.com
 * https://unaideaunviaje.com
 * https://miaventuraviajando.com
+wireframes de la pag
+home
+https://drive.google.com/file/d/1pDsX9P9PC3Rw9A2wwLUbzV27t89iQBwb/view?usp=sharing
+tienda de paquetes de turismo
+https://app.diagrams.net/#G1T2b7uYUNe-sCHpH46d3W45OFJH6jgTXv
+LOGIN
+https://drive.google.com/file/d/1-F_R3SlSnMcSfcceun-Xiy5flxaD7nNe/view?usp=sharing
+Registro
+https://drive.google.com/file/d/1OEPDl3zp8OGwIYjFB-LqKMb54UEVrHw5/view?usp=sharing
+Que hacer (actividades)
+https://drive.google.com/file/d/1mL1AuZzdUQh7gqLvqKl2MIsEjnaivF1q/view?usp=sharing
