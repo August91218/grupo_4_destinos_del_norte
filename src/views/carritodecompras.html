@@ -28,8 +28,6 @@
     <script>
         function eliminarProducto(id) {
             // Aquí puedes agregar la lógica para eliminar el producto con el ID proporcionado.
-            // Por ejemplo, puedes usar AJAX para comunicarte con el servidor y eliminar el producto de la base de datos.
-            // En este ejemplo, solo eliminaremos el elemento de la lista del carrito en el lado del cliente.
             const listItem = document.querySelector(`li[data-id="${id}"]`);
             listItem.remove();
         }
