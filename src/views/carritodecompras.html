@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    <ul>
+        <li>
+            <span>Producto 1</span>
+            <span>$20.00</span>
+            <button onclick="eliminarProducto(1)">Eliminar</button>
+        </li>
+        <li>
+            <span>Producto 2</span>
+            <span>$15.50</span>
+            <button onclick="eliminarProducto(2)">Eliminar</button>
+        </li>
+        <li>
+            <span>Producto 3</span>
+            <span>$30.25</span>
+            <button onclick="eliminarProducto(3)">Eliminar</button>
+        </li>
+    </ul>
+
+    <p>Total: $65.75</p>
+
+    <script>
+        function eliminarProducto(id) {
+            // Aquí puedes agregar la lógica para eliminar el producto con el ID proporcionado.
+            const listItem = document.querySelector(`li[data-id="${id}"]`);
+            listItem.remove();
+        }
+    </script>
+</body>
+</html>
