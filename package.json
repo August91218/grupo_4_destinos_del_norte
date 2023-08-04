@@ -1,12 +1,11 @@
 {
-  "name": "proyecto_integrador",
+  "name": "proyecto-g4-v2",
   "version": "1.0.0",
-  "description": "",
+  "description": "La idea de nuestro proyecto es realizar una página web referida a la venta de componentes de pc \r con ofertas, filtros, registros, login, y suscripciones para que lleguen notificaciones por correo.",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
