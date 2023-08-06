@@ -9,19 +9,21 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-    <nav class="contenedor">
-        <img src="/public/images/gamer-logo-design-template-7c2e7661fd6f8d96a12b26710b06dc8a_screen.jpg" alt="">
-        <div>
-            <input type="text" ><button> <i class="fa-solid fa-magnifying-glass"></i></button>
+    <header class="main-header">
+        <!-- Logo y botones-->
+    <div class="main-header-top-navbar">
+        <img class="logo" src="/public/images/gamer-logo-design-template-7c2e7661fd6f8d96a12b26710b06dc8a_screen.jpg" alt="logo">
+        <article></article>
+        <input  class="oculto" class="text"  value="Buscar..." ><button class="oculto"> <i class="fa-solid fa-magnifying-glass"></i></button>
+        <h2 class="copy-header">Bienvenidos a "Gamer PC"</h2>
         </div>
-        <div>
-            <button>Ingresar <i class="fa-solid fa-user"></i></button>
-            <button>Carrito <i class="fa-solid fa-cart-shopping"></i></button>
-        </div>
-    </nav>
-    <nav class="contenedor">
-        <ul>
+        <!-- Boton de hamburguesa-->
+        <a href="#" class="hamburguer-button"> 
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <!-- Opciones-->
+    <nav class="main-navbar oculto">
+        <ul >
             <li > 
                 <a href="">
                     <span>Productos</span>
@@ -38,21 +40,33 @@
                 </a>
             </li>
         </ul>
+            <ul >
+            <li>
+                <a href="" ><span>Ingresar </span><i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" ><span>Carrito</span> <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+        </ul>
+        
     </nav>
     </header>   
     <main>
-<div>
+<div class="main-destacados">
+    <button><i class="fa-solid fa-arrow-left"></i></button>
+    <img class="publicidad"src="/public/images/Captura.JPG" alt="">
+    <button><i class="fa-solid fa-arrow-right"></i></button>
+</div>
 
-    <img src="/public/images/Captura.JPG" alt="">
-</div>
-<div>
+<section class="main-">
     <h2>Productos descatados</h2>
-</div>
 <div>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-</div>
+    <img src="/public/images/video-geforce-rtx-4090-24gb-asus-rog-strix-gaming-oc-0.jpg" alt="">
+    <img src="/public/images/830248-MLA44537046862_012021-F.jpg" alt="">
+    <img src="/public/images/concepto-10395829.jpg" alt="">
+</section>
     </main>
     <footer>
 

@@ -1,7 +1,112 @@
-.contenedor{
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #4685E3;
+}
+
+.oculto{
+    display: none;
+}
+.main-header{
+background-color: grey;
+padding: 20px;
+
+}
+.logo{
+    width: 100px;
+    
+}
+.main-destacados{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.publicidad{
+    width: 400px;
+}
+
+.hamburguer-button{
+    background-color: #4685E3;
+    color: black;
+    display: block;
+    max-width: 50 px;
+    padding: 15 px 0px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+.main-navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.main-navbar a { 
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px;
+}
+
+@media (min-width:576px){
+.oculto{
+    display: flex;
+}
+}
+@media (min-width:768px){
+.hamburguer-button{
+    display: none;
+}    
+.main-header-top-navbar{
+    display: flex;
     justify-content: space-between;
-    align-items: stretch;
+
+}
+.copy-header{
+    font-size: 25px;
+    text-align: left;
+    
+}
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.main-navbar ul{
+    display: flex;
+}
+.main-navbvar{
+    margin: 0 5px;
+}
+}
+@media (min-width:992px){
+
+}
+@media (min-width:1200px){
+    .logo{
+        width: 150px;
+    }
+    .main-header-top-navbar, .main-navbar{
+        border: #4685E3 5px solid;
+        max-width: 1200px;
+        margin: auto;
+
+    }
+    .main-header-top-navbar{
+        align-items: center;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .main-navbar li {
+    margin: 0 5px;
+    }
+    .main-navbar a{
+        font-size: 18px;
+    }
+
 }
