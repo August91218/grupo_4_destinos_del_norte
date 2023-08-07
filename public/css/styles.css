@@ -76,8 +76,6 @@ padding: 0;
     background-color:grey ;
     display: inline-block;
     padding: 10px 10px;
-    margin: 5px;
-
 }
 .main-footer div {
     text-align:center
@@ -125,7 +123,6 @@ padding: 0;
         width: 150px;
     }
     .main-header-top-navbar, .main-navbar{
-        border: #4685E3 5px solid;
         max-width: 1200px;
         margin: auto;
 
