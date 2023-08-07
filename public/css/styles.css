@@ -12,9 +12,10 @@ body{
 background-color: grey;
 padding: 20px;
 
+
 }
 .logo{
-    width: 100px;
+    width: 25vw;
     
 }
 .main-destacados{
@@ -24,15 +25,15 @@ padding: 20px;
     align-items: center;
 }
 .publicidad{
-    width: 400px;
+    width: 80vw;
 }
 
 .hamburguer-button{
     background-color: #4685E3;
     color: black;
     display: block;
-    max-width: 50 px;
-    padding: 15 px 0px;
+    max-width: 50px;
+    padding: 15px 0px;
     border-radius: 8px;
     text-align: center;
     margin: auto;
@@ -50,6 +51,41 @@ padding: 0;
     display: inline-block;
     padding: 5px;
 }
+
+.copy-main-section-productos{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.main-section-producto{
+    display: block;
+}
+
+.main-conteiner-productos{
+    display: inline-block;
+}
+.productos{
+    width: 75vw ;
+}
+.container-producto{
+
+    padding: 10px;
+
+}
+.main-footer{
+    background-color:grey ;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 5px;
+
+}
+.main-footer div {
+    text-align:center
+}
+.main-footer div i {
+    font-size: 30px;
+}
+
 
 @media (min-width:576px){
 .oculto{
