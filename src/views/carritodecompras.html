@@ -1,36 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Carrito de Compras</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/tienda.css" class="css">
+    <title>Tienda</title>
 </head>
 <body>
-    <h1>Carrito de Compras</h1>
-    <ul>
-        <li>
-            <span>Producto 1</span>
-            <span>$20.00</span>
-            <button onclick="eliminarProducto(1)">Eliminar</button>
-        </li>
-        <li>
-            <span>Producto 2</span>
-            <span>$15.50</span>
-            <button onclick="eliminarProducto(2)">Eliminar</button>
-        </li>
-        <li>
-            <span>Producto 3</span>
-            <span>$30.25</span>
-            <button onclick="eliminarProducto(3)">Eliminar</button>
-        </li>
-    </ul>
+<header>
+    <a href="#" class="logo">
+    <img src="/public/images/logo.png" alt="logo de la compañia">
+    <h2 class="nombre de la empresa">Gamers</h2>
 
-    <p>Total: $65.75</p>
-
+    </a>
+    <nav>
+        <a href="/index.html" class="nav-link">Inicio</a>
+        <a href="/src/views/Tienda.html" class="nav-link">Tienda</a>
+        <a href="/src/views/carrito.html" class="nav-link">Carrito</a>
+    </nav>
+</header>
+<hr>
+<nav id="header">
+    <h2 class="tienda_h2">Tienda</h2>
+    <hr>
+</nav>
+<main>
+    <div id="contenedor" class="contenedor">
+        <div>
+            <img src="/public/images/LG 27GQ50F-B monitor gaming ultragear 17.jpg" alt="Producto">
+            <div class="informacion">
+                <p>Monitor LG Ultragear</p>
+                <p class="precio">$199<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 1', 199.99)">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="/public/images/Samsung Odyssey G7.jpg" alt="producto 2">
+            <div class="informacion">
+                <p>Samsung Odyssey G7</p>                   
+                <p class="precio">$299<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 2', 299.99)">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="/public/images/Samsung-Odyssey-Ark-Monitor-Gamer-Oficial.webp" alt="Producto 3">
+            <div class="informacion">
+                <p>Samsung Odyssey Ark</p>                   
+                <p class="precio">$399<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 3', 399.99)">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="/public/images/Lian Li Lancool 215X RGB (2 Coolers ARGB (200mm) + 1 Cooler).webp" alt='Producto 4'>
+            <div class="informacion">
+                <p>Gabinete Lancool + 3 Coolers</p>                   
+                <p class="precio">$499<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 4', 499.99)">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="/public/images/Mouse Gamer Redragon M908 Impact.jpg" alt="producto 5">
+            <div class="informacion">
+                <p>Mouse Redragon M908</p>                   
+                <p class="precio">$159<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 5', 159.99)">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="/public/images/Mouse Gamer Redragon Vampire RGB 8 Botões 10000 DPI.webp" alt="producto 6">
+            <div class="informacion">
+                <p>Mouse Redragon Vampire</p>                   
+                <p class="precio">$699<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 6', 699.99)">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="/public/images/thermaltake-ah-t200.jpg" alt="producto 7">
+            <div class="informacion">
+                <p>Gabinete Thermaltake T200</p>                   
+                <p class="precio">$799<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 7', 799.99)">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="/public/images/Gabinete Corsair 460X Mid-Tower Blanco RGB.jpg" alt="producto 8">
+            <div class="informacion">
+                <p>Gabinete 460X</p>                   
+                <p class="precio">$899<span>.99</span></p>
+                <button onclick="agregarAlCarrito('Producto 8', 899.99)">Comprar</button>
+            </div>
+        </div>
+    </div>
     <script>
-        function eliminarProducto(id) {
-            // Aquí puedes agregar la lógica para eliminar el producto con el ID proporcionado.
-            const listItem = document.querySelector(`li[data-id="${id}"]`);
-            listItem.remove();
+        function agregarAlCarrito(nombre, precio) {
+            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.push({ nombre, precio });
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert(`${nombre} agregado al carrito. Precio: $${precio}`);
         }
     </script>
+    <script src="/app.js"></script>
+</main>
 </body>
 </html>
