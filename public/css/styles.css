@@ -1,9 +1,7 @@
 *{
     box-sizing: border-box;
 }
-body{
-    background-color: #4685E3;
-}
+
 body{
     font-family: "Space Grotesk", sans-serif;
     background-color: #141c29;
@@ -14,23 +12,18 @@ a{
     text-decoration: none;
     color: rgb(140, 140, 140);
 }
-header{
-    display: flex;
-    min-height: 70px;
-    background-color: rgb(71, 2, 71);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
 
 .logo{
     display: flex;
-    align-items: center;
+    
 }
 .logo img{
     width: 35px;
     height: 35px;
     margin-right: 10px;
+}
+.main-header-top-navbar{
+    text-align: center;
 }
 nav a{
     font-weight: 600;
@@ -45,11 +38,11 @@ nav a:hover{
 .main-header{
 background-color: grey;
 padding: 20px;
-
+display: block;
 
 }
 .logo{
-    width: 25vw;
+    width: 8rem;
     
 }
 .main-destacados{
@@ -57,14 +50,15 @@ padding: 20px;
     margin: auto;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 .publicidad{
     width: 80vw;
 }
 
 .hamburguer-button{
-    background-color: #4685E3;
-    color: black;
+    background-color: rgb(71, 2, 71);
+    color: white;
     display: block;
     max-width: 50px;
     padding: 15px 0px;
@@ -98,8 +92,8 @@ padding: 0;
 .main-conteiner-productos{
     display: inline-block;
 }
-.productos{
-    width: 75vw ;
+img{
+    width: 70vw;
 }
 .container-producto{
 
@@ -108,7 +102,8 @@ padding: 0;
 }
 .main-footer{
     background-color:grey ;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     padding: 10px 10px;
 }
 .main-footer div {
@@ -117,11 +112,87 @@ padding: 0;
 .main-footer div i {
     font-size: 30px;
 }
+.copy-main-section-productos{
+    background-color:rgb(71, 2, 71); ;
+    padding: 3px;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+}
+.main-conteiner-productos{
+    display: flex;
+    flex-direction: column;
+}
+.container-producto{
+    display: block;
+    text-align: center;
+    background-color: rgb(71, 2, 71);;
+    padding: 10px ;
+    margin: 5px;
+}
+.container-producto h4{
+color: white;
+
+}
+.publicidad{
+    display: block;
+    padding: 5px;
+
+}
+.logo-footer{
+    width: 30%;
+}
+h1,h2{
+    color: white;
+    
+}
+
+
+
 
 
 @media (min-width:576px){
 .oculto{
     display: flex;
+    
+}
+
+.barra-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    display: none;
+}
+.main-header{
+    display: block;
+    padding: 0;
+
+}
+.main-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+.main-header-top-navbar{
+    display: flex;
+    justify-content: space-around;
+    border: black solid 2px;
+}
+header {
+    display: none;
+}
+.hamburguer-button{
+    display: none;
+}
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(71, 2, 71);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 }
 @media (min-width:768px){
@@ -148,15 +219,19 @@ padding: 0;
 .main-navbvar{
     margin: 0 5px;
 }
+.main-footer div{
+
+
+}
 }
 @media (min-width:992px){
 
 }
 @media (min-width:1200px){
     .logo{
-        width: 150px;
+        width: 100px;
     }
-    .main-header-top-navbar, .main-navbar{
+    .main-header-top-navbar, .main-navbar, .main-footer{
         max-width: 1200px;
         margin: auto;
 
@@ -174,6 +249,14 @@ padding: 0;
     }
     .main-navbar a{
         font-size: 18px;
+    }
+    header nav{
+        display: flex;
+        min-height: 70px;
+        background-color: rgb(71, 2, 71);
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
     }
 
 }
