@@ -19,7 +19,7 @@
     </nav>
 </header>
 <body>
-    <h1>Carrito de compras</h1>
+    <main><h1>Carrito de compras</h1>
 
     <div>
         <h2>Productos en el carrito</h2>
@@ -27,10 +27,9 @@
             <!-- Aquí se mostrarán los productos agregados al carrito -->
         </ul>
         <p>Total: $<span id="total">0</span></p>
-        <button onclick="vaciarCarrito()">Vaciar carrito</button>
-        <button onclick="realizarCompra()">Comprar</button>
-    </div>
-
+        <button class="Vaciarc"  onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="Comprarc" onclick="realizarCompra()">Comprar</button>
+    </div></main>
     <script src="/app.js"></script>
     <script>
         function mostrarProductosEnCarrito() {
@@ -62,5 +61,26 @@ function realizarCompra() {
 
 mostrarProductosEnCarrito();
     </script>
+    <footer class="main-footer">
+        <div class="conteiner-footer">
+            <h3>Redes sociales</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+            <div class="conteiner-footer">
+                <img class="logo" src="/public/images/logo.png" alt="logo">
+                <h4>Contactanos</h4>
+                <h4>3884502323</h2>
+                <h4>Correo:ventadecomponentes@gmail.com</h3>
+            </div>
+            <div class="conteiner-footer">
+                <h3>¿Queres recibir las mejores ofertas?</h3>
+                <h3>correo electronico</h3>
+                <input class="email" type="email" value="">
+                <button>Suscribite</button>
+            </div>
+            
+    </footer>
 </body>
 </html>
